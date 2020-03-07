@@ -19,8 +19,36 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body parsing middleware
 
+    // record the name and the differential score of every friend for comparison when done
+    differencesArray = [
+
+    ]
+
+    // for loop so every friend array is searched
+    // for loop to compare the 10 scores of each
+    // push the name and difference score into the diffArray
+
+    // for(var i=0;i<friendsArray.length;i++){
+
+    //     newFriend = {}
+    //     newFriend.push(friendsArray[i].name)
+
+    //     diffScore = 0
+
+    //     for(var t=0;t<10;t++){
+    //         diffScore = diffScore + Math.abs(friendsArray[i].score[t] - req.body.score[t]) 
+    //     }
+    
+    //     newFriend.push(diffScore)
+
+    //     differencesArray.push(newFriend)
+    // }
+
+    // // find the greatest score and print the name for the survey.html
+    // console.log(differencesArray)
+    
     friendsArray.push(req.body)
-    res.json(true)
+    res.json("your new best friend is "+"placeholder")
   });
 
   // ---------------------------------------------------------------------------
