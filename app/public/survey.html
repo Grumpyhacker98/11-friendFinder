@@ -103,21 +103,25 @@
 
             console.log(newFriend);
 
-            // $.post("/api/tables", newFriend, function (data) {
+            $.post("/api/friends", newFriend, function (data) {
 
-            //     // Clear the form when submitting
-            //     $("#test1").val("");
-            //     $("#test2").val("");
-            //     $("#test3").val("");
-            //     $("#test4").val("");
-            //     $("#test5").val("");
-            //     $("#test6").val("");
-            //     $("#test7").val("");
-            //     $("#test8").val("");
-            //     $("#test9").val("");
-            //     $("#test10").val("");
+                if(data){
+                    console.log("post sucess")
+                }
 
-            // });
+                // Clear the form when submitting
+                $("#test1").val("");
+                $("#test2").val("");
+                $("#test3").val("");
+                $("#test4").val("");
+                $("#test5").val("");
+                $("#test6").val("");
+                $("#test7").val("");
+                $("#test8").val("");
+                $("#test9").val("");
+                $("#test10").val("");
+
+            });
 
         });
     </script>

@@ -16,3 +16,23 @@
 //         1
 //       ]
 //   }
+
+var friendsArray = [
+    {
+        "name": "Harry Potter",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ]
+    }
+]
+
+module.exports = friendsArray
